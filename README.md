@@ -75,7 +75,7 @@ Digunakan untuk menyimpan foto profil dan gambar yang terkait dengan transaksi.
 ## Screenshot
 
 ### Desain 1
-!(screenshots/image1.png)
+(screenshots/image1.png)
 
 ### Desain 2
 !(screenshots/image2.png).
