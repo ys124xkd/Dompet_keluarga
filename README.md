@@ -72,11 +72,6 @@ Digunakan untuk menyimpan foto profil dan gambar yang terkait dengan transaksi.
 
 5. Jalankan aplikasi pada emulator atau perangkat Android.
 
-## Screenshot
-
-![Desain 1](screenshots/image1.png)
-
-![Desain 2](screenshots/image2.png)
 
 ## Lisensi
 
