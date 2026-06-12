@@ -75,10 +75,10 @@ Digunakan untuk menyimpan foto profil dan gambar yang terkait dengan transaksi.
 ## Screenshot
 
 ### Desain 1
-![Desain 1](screenshots/figma1.png)
+![Desain 1](screenshots/image1.png)
 
 ### Desain 2
-![Desain 2](screenshots/figma2.png)
+![Desain 2](screenshots/image2.png)
 
 ## Lisensi
 
