@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foto"
+    tools:context=".Login">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="344dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/cardBackground"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="333dp"
+                android:layout_height="375dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/login"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="33dp"
+                    android:layout_height="44dp"
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/mail"
+                    app:layout_constraintBottom_toBottomOf="@id/etEmail"
+                    app:layout_constraintEnd_toStartOf="@+id/etEmail"
+                    app:layout_constraintTop_toTopOf="@id/etEmail" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="265dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView" />
+
+                <ImageView
+                    android:id="@+id/imgPassword"
+                    android:layout_width="33dp"
+                    android:layout_height="44dp"
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/password"
+                    app:layout_constraintBottom_toBottomOf="@+id/etPassword"
+                    app:layout_constraintEnd_toStartOf="@+id/etPassword"
+                    app:layout_constraintTop_toTopOf="@+id/etPassword" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@id/etEmail"
+                    app:layout_constraintStart_toStartOf="@id/etEmail"
+                    app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+                <TextView
+                    android:id="@+id/vForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/forgot_password"
+                    app:layout_constraintEnd_toEndOf="@id/etPassword"
+                    app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+                <Button
+                    android:id="@+id/bLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/etPassword"
+                    app:layout_constraintStart_toStartOf="@+id/etPassword"
+                    app:layout_constraintTop_toBottomOf="@id/vForgotPassword" />
+
+                <Button
+                    android:id="@+id/bRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/regist"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/bLogin"
+                    app:layout_constraintStart_toStartOf="@+id/bLogin"
+                    app:layout_constraintTop_toBottomOf="@id/bLogin" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

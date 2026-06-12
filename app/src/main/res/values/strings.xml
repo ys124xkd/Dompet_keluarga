@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Dompet keluarga</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+
+    <!-- String untuk login dan register-->
+    <string name="regist">Register</string>
+    <string name="logo">Logo</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="simpan">Simpan</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="back_to_login">Back to Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="floating_action_button">Floating Action Button</string>
+    <string name="saldo">Saldo</string>
+    <string name="pendapatan">Pendapatan</string>
+    <string name="pengeluaran">Pengeluaran</string>
+    <string name="admin_register">Admin Register</string>
+    <string name="image_showing_the_location">Image showing the location</string>
+    <string name="text_judul_category_transaksi">Text Judul category transaksi</string>
+    <string name="type_transaksi">Type Transaksi :</string>
+    <string name="text_showing_the_type_of_transaction">Text showing the type of transaction</string>
+    <string name="text_judul_kategori">Text Judul Kategori</string>
+    <string name="text_showing_the_kategori">Text showing the kategori</string>
+    <string name="text_judul_jumlah_uang">Text judul jumlah uang</string>
+    <string name="text_showing_the_amount_of_money_in_the_transaction">Text showing the amount of money in the transaction</string>
+    <string name="text_judul_tanggal">Text judul tanggal</string>
+    <string name="text_showing_the_date_of_the_transaction">Text showing the date of the transaction</string>
+    <string name="text_judul_catatan">Text judul catatan</string>
+    <string name="text_showing_additional_notes_or_remarks_for_the_transaction">Text showing additional notes or remarks for the transaction</string>
+    <string name="image_showing_the_location_anak">Image showing the location</string>
+    <string name="text_judul_nama">Text judul nama</string>
+    <string name="text_showing_nama_anak">Text showing nama anak</string>
+    <string name="text_judul_tanggal_anak">Text judul tanggal</string>
+    <string name="text_showing_tanggal">Text showing tanggal</string>
+    <string name="text_judul_jumlah_pendapatan">Text judul jumlah pendapatan</string>
+    <string name="text_showing_jumlah_pendapatan">Text showing jumlah pendapatan</string>
+    <string name="text_judul_jumlah_pengeluaran">Text judul jumlah pengeluaran</string>
+    <string name="text_showing_jumlah_pengeluaran">Text showing jumlah pengeluaran</string>
+
+</resources>

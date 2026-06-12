@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:elevation="20dp"
+    app:cardBackgroundColor="@color/design_default_color_background"
+    android:layout_margin="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rvTrsContainer"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!-- ImageView for the location -->
+
+        <!-- TextView for transaction type -->
+
+        <ImageView
+            android:id="@+id/ivImageLocation"
+            android:layout_width="120dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="4dp"
+            android:paddingRight="18dp"
+            android:contentDescription="@string/image_showing_the_location"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.184" />
+
+        <TextView
+            android:id="@+id/tvJudul1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/text_judul_category_transaksi"
+            android:text="@string/type_transaksi"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- TextView for category -->
+
+        <TextView
+            android:id="@+id/tvTypeTransaksi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/text_showing_the_type_of_transaction"
+            android:text="Tipe Transaksi"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvJudul1" />
+
+        <TextView
+            android:id="@+id/tvJudul2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/text_judul_kategori"
+            android:text="Kategori :"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toTopOf="@+id/tvTypeTransaksi" />
+
+        <TextView
+            android:id="@+id/tvKategori"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/text_showing_the_kategori"
+            android:text="Kategori"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvJudul2" />
+
+        <TextView
+            android:id="@+id/tvJudul3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/text_judul_jumlah_uang"
+            android:text="Jumlah Uang :"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toTopOf="@+id/tvKategori" />
+        <TextView
+            android:id="@+id/tvJumlahUang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rp 100.000"
+            android:textSize="11sp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/text_showing_the_amount_of_money_in_the_transaction"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvJudul3"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <TextView
+            android:id="@+id/tvJudul4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/text_judul_tanggal"
+            android:text="Tanggal :"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toTopOf="@+id/tvJumlahUang"/>
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="11sp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/text_showing_the_date_of_the_transaction"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvJudul4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvJudul6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/text_judul_catatan"
+            android:text="Catatan :"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toTopOf="@+id/tvTanggal"/>
+        <TextView
+            android:id="@+id/tvCatatan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Catatan"
+            android:textSize="11sp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/text_showing_additional_notes_or_remarks_for_the_transaction"
+            app:layout_constraintStart_toEndOf="@+id/ivImageLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvJudul6"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#1E88E5"
+            android:scaleType="center"
+            android:contentDescription="Ubah Transaksi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_edit_24" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/baseline_delete_forever_24"
+            android:backgroundTint="#F80B0B"
+            android:scaleType="center"
+            android:contentDescription="Hapus Transaksi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUpdate"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

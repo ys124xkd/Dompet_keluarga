@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_admin"
+    app:startDestination="@id/home_Fragment_Admin">
+
+    <fragment
+        android:id="@+id/home_Fragment_Admin"
+        android:name="com.example.dompetkeluarga.Home_Fragment_Admin"
+        android:label="fragment_home___admin"
+        tools:layout="@layout/fragment_home_admin" >
+        <action
+            android:id="@+id/action_home_Fragment_Admin_to_editProfleFragmentRegister"
+            app:destination="@id/editProfleFragmentRegister" />
+        <action
+            android:id="@+id/action_home_Fragment_Admin_to_laporanKeuanganFragmentAdmin"
+            app:destination="@id/laporanKeuanganFragmentAdmin" />
+        <action
+            android:id="@+id/action_home_Fragment_Admin_to_laporanPendapatanFragmentAdmin"
+            app:destination="@id/laporanPendapatanFragmentAdmin" />
+        <action
+            android:id="@+id/action_home_Fragment_Admin_to_laporanUangSakuAnakFragmentAdmin"
+            app:destination="@id/laporanUangSakuAnakFragmentAdmin" />
+        <action
+            android:id="@+id/action_home_Fragment_Admin_to_addDataFragmentAdmin"
+            app:destination="@id/addDataFragmentAdmin" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfleFragmentRegister"
+        android:name="com.example.dompetkeluarga.EditProfleFragmentRegister"
+        android:label="fragment_edit_profle_register"
+        tools:layout="@layout/fragment_edit_profle_register" >
+        <action
+            android:id="@+id/action_editProfleFragmentRegister_to_home_Fragment_Admin"
+            app:destination="@id/home_Fragment_Admin" />
+        <action
+            android:id="@+id/action_editProfleFragmentRegister_to_registrasiAdminFragment"
+            app:destination="@id/registrasiAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/laporanKeuanganFragmentAdmin"
+        android:name="com.example.dompetkeluarga.LaporanKeuanganFragmentAdmin"
+        android:label="fragment_laporan_keuangan_admin"
+        tools:layout="@layout/fragment_laporan_keuangan_admin" >
+        <action
+            android:id="@+id/action_laporanKeuanganFragmentAdmin_to_home_Fragment_Admin"
+            app:destination="@id/home_Fragment_Admin" />
+        <action
+            android:id="@+id/action_laporanKeuanganFragmentAdmin_to_riwayatLaporanKeuanganFragment"
+            app:destination="@id/riwayatLaporanKeuanganFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDataFragmentAdmin"
+        android:name="com.example.dompetkeluarga.AddDataFragmentAdmin"
+        android:label="fragment_add_data_admin"
+        tools:layout="@layout/fragment_add_data_admin" >
+        <action
+            android:id="@+id/action_addDataFragmentAdmin_to_home_Fragment_Admin"
+            app:destination="@id/home_Fragment_Admin" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrasiAdminFragment"
+        android:name="com.example.dompetkeluarga.RegistrasiAdminFragment"
+        android:label="fragment_registrasi_admin"
+        tools:layout="@layout/fragment_registrasi_admin" >
+        <action
+            android:id="@+id/action_registrasiAdminFragment_to_editProfleFragmentRegister"
+            app:destination="@id/editProfleFragmentRegister" />
+    </fragment>
+    <fragment
+        android:id="@+id/laporanPendapatanFragmentAdmin"
+        android:name="com.example.dompetkeluarga.LaporanPendapatanFragmentAdmin"
+        android:label="fragment_laporan_pendapatan_admin"
+        tools:layout="@layout/fragment_laporan_pendapatan_admin" >
+        <action
+            android:id="@+id/action_laporanPendapatanFragmentAdmin_to_home_Fragment_Admin"
+            app:destination="@id/home_Fragment_Admin" />
+        <action
+            android:id="@+id/action_laporanPendapatanFragmentAdmin_to_updatePendapatanAdminFragment"
+            app:destination="@id/updatePendapatanAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/laporanUangSakuAnakFragmentAdmin"
+        android:name="com.example.dompetkeluarga.LaporanUangSakuAnakFragmentAdmin"
+        android:label="fragment_laporan_uang_saku_anak_admin"
+        tools:layout="@layout/fragment_laporan_uang_saku_anak_admin" >
+        <action
+            android:id="@+id/action_laporanUangSakuAnakFragmentAdmin_to_home_Fragment_Admin"
+            app:destination="@id/home_Fragment_Admin" />
+        <action
+            android:id="@+id/action_laporanUangSakuAnakFragmentAdmin_to_updateUangSakuAnakFragment"
+            app:destination="@id/updateUangSakuAnakFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePendapatanAdminFragment"
+        android:name="com.example.dompetkeluarga.UpdatePendapatanAdminFragment"
+        android:label="fragment_update_pendapatan_admin"
+        tools:layout="@layout/fragment_update_pendapatan_admin" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            app:argType="string" />
+        <argument
+            android:name="note"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_updatePendapatanAdminFragment_to_laporanPendapatanFragmentAdmin2"
+            app:destination="@id/laporanPendapatanFragmentAdmin" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateUangSakuAnakFragment"
+        android:name="com.example.dompetkeluarga.UpdateUangSakuAnakFragment"
+        android:label="fragment_update_uang_saku_anak"
+        tools:layout="@layout/fragment_update_uang_saku_anak" >
+        <action
+            android:id="@+id/action_updateUangSakuAnakFragment_to_laporanUangSakuAnakFragmentAdmin"
+            app:destination="@id/laporanUangSakuAnakFragmentAdmin" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="nama"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument android:name="amount"
+            app:argType="string" />
+        <argument
+            android:name="note"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/riwayatLaporanKeuanganFragment"
+        android:name="com.example.dompetkeluarga.RiwayatLaporanKeuanganFragment"
+        android:label="fragment_riwayat_laporan_keuangan"
+        tools:layout="@layout/fragment_riwayat_laporan_keuangan" >
+        <action
+            android:id="@+id/action_riwayatLaporanKeuanganFragment_to_laporanKeuanganFragmentAdmin"
+            app:destination="@id/laporanKeuanganFragmentAdmin" />
+    </fragment>
+</navigation>

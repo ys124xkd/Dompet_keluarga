@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "113780876294",
+    "firebase_url": "https://fir-auth-beeb0-default-rtdb.firebaseio.com",
+    "project_id": "fir-auth-beeb0",
+    "storage_bucket": "fir-auth-beeb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113780876294:android:1fb8f5e8134323d6ffcf87",
+        "android_client_info": {
+          "package_name": "com.example.crud.database"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-MAtyxmdSnCJ_gdNCqRbURGhA-U39-FQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113780876294:android:d42b43a90cf388fcffcf87",
+        "android_client_info": {
+          "package_name": "com.example.dompetkeluarga"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-MAtyxmdSnCJ_gdNCqRbURGhA-U39-FQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113780876294:android:00851f27e15bfb21ffcf87",
+        "android_client_info": {
+          "package_name": "com.example.firebaseauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-MAtyxmdSnCJ_gdNCqRbURGhA-U39-FQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113780876294:android:1ecc27367d5fd6abffcf87",
+        "android_client_info": {
+          "package_name": "com.example.prokoneksidata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-MAtyxmdSnCJ_gdNCqRbURGhA-U39-FQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

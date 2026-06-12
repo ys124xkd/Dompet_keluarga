@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigasi"
+    app:startDestination="@id/homeFragment_user">
+
+    <fragment
+        android:id="@+id/homeFragment_user"
+        android:name="com.example.dompetkeluarga.HomeFragment_user"
+        android:label="fragment_home_user"
+        tools:layout="@layout/fragment_home_user" >
+        <action
+            android:id="@+id/action_homeFragment_user_to_editProfileFragment_user"
+            app:destination="@id/editProfileFragment_user" />
+        <action
+            android:id="@+id/action_homeFragment_user_to_addDataFragment"
+            app:destination="@id/addDataFragment" />
+        <action
+            android:id="@+id/action_homeFragment_user_to_updateFragmentDataTransactionUser2"
+            app:destination="@id/updateFragmentDataTransactionUser" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDataFragment"
+        android:name="com.example.dompetkeluarga.AddDataFragment"
+        android:label="fragment_add_data"
+        tools:layout="@layout/fragment_add_data" >
+        <action
+            android:id="@+id/action_addDataFragment_to_homeFragment_user"
+            app:destination="@id/homeFragment_user" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment_user"
+        android:name="com.example.dompetkeluarga.EditProfileFragment_user"
+        android:label="fragment_edit_profile_user"
+        tools:layout="@layout/fragment_edit_profile_user" >
+        <action
+            android:id="@+id/action_editProfileFragment_user_to_homeFragment_user2"
+            app:destination="@id/homeFragment_user" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragmentDataTransactionUser"
+        android:name="com.example.dompetkeluarga.UpdateFragmentDataTransactionUser"
+        android:label="fragment_update_data_transaction_user"
+        tools:layout="@layout/fragment_update_data_transaction_user" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument android:name="amount"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="note"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_updateFragmentDataTransactionUser_to_homeFragment_user3"
+            app:destination="@id/homeFragment_user" />
+    </fragment>
+</navigation>
