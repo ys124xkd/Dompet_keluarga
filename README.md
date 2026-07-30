@@ -1,29 +1,33 @@
 # 💰 Family Wallet
 
-Family Wallet is an Android application developed with Kotlin to help families manage their daily finances. The application enables parents to record income, distribute allowances to their children, and monitor family financial activities through a simple and integrated interface.
+Family Wallet is an Android application developed using **Kotlin** to help families manage their daily income and expenses. The application supports **multi-user authentication** with two roles: **Admin (Parent)** and **User (Child)**. Parents can record income, distribute allowances to their children, and monitor each child's financial activities, while children can manage their own income and expense transactions, track their balances, and view transaction history through an integrated financial management system.
+
+---
 
 ## ✨ Features
 
 ### 👨‍👩‍👧 Admin (Parent)
 
-- Secure authentication
-- Record family income
+- Secure admin authentication
+- Record income
 - Distribute allowances to children
 - View total income, total allowances, and remaining balance
 - Manage income records (Create, Read, Update, Delete)
 - Manage children's allowance records (Create, Read, Update, Delete)
-- View financial reports and transaction history
+- View income history
+- View each child's financial report and transaction history
 - Update profile photo using the camera or gallery
-- Register a new admin account
+- Register new admin accounts
 
 ### 👦 User (Child)
 
-- Register and log in to an account
+- Register and log in
 - Record income and expense transactions
-- View current balance, total income, and total expenses
+- View current balance, total income, total expenses, and received allowances
 - Manage personal transactions (Create, Read, Update, Delete)
 - View transaction history
 - Update profile photo using the camera or gallery
+- Upload transaction location images
 
 ---
 
@@ -40,73 +44,154 @@ Family Wallet is an Android application developed with Kotlin to help families m
 
 ---
 
-## 🗄️ Database Structure
+## 📱 Application Workflow
+
+### Login & Registration
+
+- Supports multi-user authentication.
+- Registration is available for **User (Child)** accounts.
+- During login:
+  - **Admin** users are redirected to the **Admin Dashboard**.
+  - **User** accounts are redirected to the **User Dashboard**.
+
+### Admin Dashboard
+
+The Admin Dashboard provides:
+
+- Total income
+- Total allowances distributed
+- Remaining balance
+
+Available actions:
+
+- Add income or allowance
+- Manage children's allowances
+- View income history
+- View children's financial reports
+- Edit profile
+- Register new admin accounts
+- Logout
+
+### User Dashboard
+
+The User Dashboard provides:
+
+- Total income
+- Total expenses
+- Total allowances received
+- Current balance
+
+Available actions:
+
+- Add transactions
+- Edit transactions
+- Delete transactions
+- View transaction history
+- Edit profile
+- Logout
+
+---
+
+## 🗄️ Firebase Database Structure
 
 ### Users
 
-Stores user information, including:
+Stores user account information:
 
-- Name
 - Email
-- Profile picture
+- Name
+- Profile image
 - User role (Admin/User)
 
 ### Transactions
 
-Stores user financial transactions, including:
+Stores users' income and expense records:
 
-- Transaction type (Income/Expense)
-- Category
 - Amount
+- Category
 - Date
-- Notes
-- Location
+- Transaction ID
+- Location image
+- Note
+- Transaction type
+- User ID
+- Username
 
-### Admin Transactions
+### Transactions_Admin
 
-Stores financial data managed by parents, including:
+Stores admin income and children's allowance records.
 
-- Income records
-- Children's allowance distributions
+**Income**
+
+- Amount
+- Category
+- Date
+- Transaction ID
+- Note
+
+**Allowance**
+
+- Amount
+- Category
+- Date
+- Child's name
+- Note
+- User ID
 
 ---
 
-## ☁️ Firebase Services
+## ☁️ Firebase Storage
 
-This project uses the following Firebase services:
+Two folders are used:
 
-- **Firebase Authentication** – User registration and authentication
-- **Firebase Realtime Database** – Stores user profiles, transactions, income, and allowance data
-- **Firebase Storage** – Stores profile images
+- `images_profile/` – Stores profile images.
+- `image_location/` – Stores transaction location images.
+
+---
+
+## 🔐 Firebase Authentication
+
+Used for:
+
+- User registration
+- User authentication
+- Admin authentication
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone this repository.
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/ys124xkd/Dompet_keluarga.git
 ```
 
-2. Open the project in **Android Studio**.
+### 2. Open the project
 
-3. Create your own Firebase project.
+Open the project using **Android Studio**.
 
-4. Add your `google-services.json` file to the project.
+### 3. Configure Firebase
 
-5. Sync the Gradle dependencies.
+- Create your own Firebase project.
+- Add the `google-services.json` file to the app module.
 
-6. Build and run the application on an Android emulator or physical device.
+### 4. Sync Gradle
+
+Sync the Gradle dependencies.
+
+### 5. Run the application
+
+Run the application on an Android emulator or a physical Android device.
 
 ---
 
 ## 📌 Important Note
 
-The original Firebase project used during development is no longer available. To run this application successfully, configure your own Firebase project and replace the `google-services.json` file with your Firebase configuration.
+The original Firebase project used during development is no longer available. To run this application successfully, create your own Firebase project and replace the `google-services.json` file with your Firebase configuration.
 
 ---
 
 ## 📄 License
 
-This project was developed for educational purposes and portfolio demonstration.
+This project was developed for educational and portfolio purposes.
