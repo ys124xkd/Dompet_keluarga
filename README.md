@@ -1,29 +1,33 @@
-# Dompet Keluarga
+# 💰 Family Wallet
 
-Aplikasi Android berbasis Kotlin yang dirancang untuk membantu keluarga dalam mengelola keuangan sehari-hari. Aplikasi ini memungkinkan orang tua untuk mencatat pendapatan, membagikan uang saku kepada anak, serta memantau riwayat transaksi dan saldo keuangan keluarga secara terintegrasi.
+Family Wallet is an Android application developed with Kotlin to help families manage their daily finances. The application enables parents to record income, distribute allowances to their children, and monitor family financial activities through a simple and integrated interface.
 
-## Fitur Utama
+## ✨ Features
 
-### Admin (Orang Tua)
-- Login sebagai admin.
-- Menambahkan data pendapatan.
-- Membagikan uang saku kepada anak.
-- Melihat total pendapatan, total uang saku, dan saldo tersisa.
-- Mengelola data pendapatan (tambah, edit, hapus).
-- Mengelola data uang saku anak (tambah, edit, hapus).
-- Melihat laporan keuangan dan riwayat transaksi setiap anak.
-- Mengubah foto profil menggunakan kamera atau galeri.
-- Registrasi akun admin baru.
+### 👨‍👩‍👧 Admin (Parent)
 
-### User (Anak)
-- Registrasi dan login akun.
-- Menambahkan transaksi pendapatan dan pengeluaran.
-- Melihat saldo, total pendapatan, dan total pengeluaran.
-- Mengelola transaksi pribadi (tambah, edit, hapus).
-- Melihat riwayat transaksi.
-- Mengubah foto profil menggunakan kamera atau galeri.
+- Secure authentication
+- Record family income
+- Distribute allowances to children
+- View total income, total allowances, and remaining balance
+- Manage income records (Create, Read, Update, Delete)
+- Manage children's allowance records (Create, Read, Update, Delete)
+- View financial reports and transaction history
+- Update profile photo using the camera or gallery
+- Register a new admin account
 
-## Teknologi yang Digunakan
+### 👦 User (Child)
+
+- Register and log in to an account
+- Record income and expense transactions
+- View current balance, total income, and total expenses
+- Manage personal transactions (Create, Read, Update, Delete)
+- View transaction history
+- Update profile photo using the camera or gallery
+
+---
+
+## 🛠️ Technologies
 
 - Kotlin
 - Android Studio
@@ -31,48 +35,78 @@ Aplikasi Android berbasis Kotlin yang dirancang untuk membantu keluarga dalam me
 - Firebase Realtime Database
 - Firebase Storage
 - RecyclerView
-- Fragment
+- Fragments
 - Material Design
 
-## Struktur Database
+---
+
+## 🗄️ Database Structure
 
 ### Users
-Menyimpan informasi akun pengguna seperti email, nama, foto profil, dan role pengguna.
+
+Stores user information, including:
+
+- Name
+- Email
+- Profile picture
+- User role (Admin/User)
 
 ### Transactions
-Menyimpan data transaksi pendapatan dan pengeluaran pengguna, termasuk kategori, nominal, tanggal, catatan, dan lokasi.
 
-### Transactions Admin
-Menyimpan data pendapatan admin serta distribusi uang saku kepada pengguna.
+Stores user financial transactions, including:
 
-## Penyimpanan Firebase
+- Transaction type (Income/Expense)
+- Category
+- Amount
+- Date
+- Notes
+- Location
 
-### Firebase Authentication
-Digunakan untuk proses registrasi dan login pengguna.
+### Admin Transactions
 
-### Firebase Realtime Database
-Digunakan untuk menyimpan data pengguna, transaksi, pendapatan, dan uang saku.
+Stores financial data managed by parents, including:
 
-### Firebase Storage
-Digunakan untuk menyimpan foto profil dan gambar yang terkait dengan transaksi.
+- Income records
+- Children's allowance distributions
 
-## Cara Menjalankan Project
+---
 
-1. Clone repository:
+## ☁️ Firebase Services
 
-   ```bash
-   git clone https://github.com/ys124xkd/Dompet_keluarga.git
-   ```
+This project uses the following Firebase services:
 
-2. Buka project menggunakan Android Studio.
+- **Firebase Authentication** – User registration and authentication
+- **Firebase Realtime Database** – Stores user profiles, transactions, income, and allowance data
+- **Firebase Storage** – Stores profile images
 
-3. Tambahkan file `google-services.json` sesuai konfigurasi Firebase.
+---
 
-4. Lakukan sinkronisasi Gradle.
+## 🚀 Getting Started
 
-5. Jalankan aplikasi pada emulator atau perangkat Android.
+1. Clone this repository.
 
+```bash
+git clone https://github.com/ys124xkd/Dompet_keluarga.git
+```
 
-## Lisensi
+2. Open the project in **Android Studio**.
 
-Project ini dibuat untuk tujuan pembelajaran dan pengembangan aplikasi Android.
+3. Create your own Firebase project.
+
+4. Add your `google-services.json` file to the project.
+
+5. Sync the Gradle dependencies.
+
+6. Build and run the application on an Android emulator or physical device.
+
+---
+
+## 📌 Important Note
+
+The original Firebase project used during development is no longer available. To run this application successfully, configure your own Firebase project and replace the `google-services.json` file with your Firebase configuration.
+
+---
+
+## 📄 License
+
+This project was developed for educational purposes and portfolio demonstration.
